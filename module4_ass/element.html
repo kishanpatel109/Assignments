@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Elements Dynamically</title>
+</head>
+
+<body>
+    <button id="addElementBtn">Add New Element</button>
+
+    <script>
+        document.getElementById('addElementBtn').addEventListener('click', function () {
+
+            var newDiv = document.createElement('div');
+
+
+            newDiv.innerHTML = 'This is a new dynamically added div element!';
+
+
+            newDiv.style.backgroundColor = 'lightblue';
+            newDiv.style.padding = '10px';
+            newDiv.style.marginTop = '10px';
+
+
+            document.body.appendChild(newDiv);
+        });
+    </script>
+</body>
+
+</html>
