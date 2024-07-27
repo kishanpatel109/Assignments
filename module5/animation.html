@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+        .slider {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .slick-slide {
+            text-align: center;
+            color: #fff;
+            background: #3498db;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div>Slide 1</div>
+        <div>Slide 2</div>
+        <div>Slide 3</div>
+        <div>Slide 4</div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true,
+                speed: 200,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+
+</html>
